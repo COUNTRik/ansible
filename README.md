@@ -7,10 +7,10 @@
 - использован notify для старта nginx после установки
 - сайт должен слушать на нестандартном порту 8080, для этого использованы переменные в Ansible
 
-
-├── ansible.cfg        # конфиг ansible
+``
+├── ansible.cfg        # конфигурационный файл ansible
 ├── epel.yml           # тестовый сценарий
-├── playbooks          # каталог со сценариями
+├── playbooks
 │   └── nginx.yml      # сценарий для разворачивания nginx
 ├── README.md
 ├── staging
@@ -18,3 +18,4 @@
 ├── templates
 │   └── nginx.conf.j2  # шаблон jinja2 с переменными
 └── Vagrantfile        # vagrant file для запуска нашего стенда
+``
