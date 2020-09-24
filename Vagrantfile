@@ -30,7 +30,7 @@ Vagrant.configure("2") do |config|
           SHELL
 
           box.vm.provision "ansible" do |ansible|
-            ansible.playbook = "nginx.yml"
+            ansible.playbook = "playbooks/nginx.yml"
           end
 
       end
